@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ActivityTwo">
 
     <TextView
         android:id="@+id/onCreate"
@@ -96,11 +95,10 @@
         android:layout_width="348dp"
         android:layout_height="41dp"
         android:layout_marginTop="48dp"
-        android:text="Start Activity Two"
-        android:onClick="startActivityTwo"
+        android:text="Start Main Activity"
+        android:onClick="startMainActivity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/onRestartCalls" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

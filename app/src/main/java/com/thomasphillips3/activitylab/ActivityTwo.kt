@@ -11,10 +11,10 @@ private var onStartCount = 0
 private var onResumeCount = 0
 private var onRestartCount = 0
 
-class MainActivity : AppCompatActivity() {
+class ActivityTwo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_two)
 
         onCreateCount++
         onCreateCalls.text = onCreateCount.toString()
@@ -42,8 +42,11 @@ class MainActivity : AppCompatActivity() {
         onRestartCalls.text = onRestartCount.toString()
     }
 
-    fun startActivityTwo(view: View) {
-        val activityTwoIntent = Intent(this, ActivityTwo::class.java)
-        startActivity(activityTwoIntent)
+    fun startMainActivity(view: View) {
+        val mainActivityIntent = Intent(this, MainActivity::class.java)
+        startActivity(mainActivityIntent)
+
     }
+
+    fun startMainActivityTwo(view: View) {}
 }
