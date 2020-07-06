@@ -43,10 +43,6 @@ class ActivityTwo : AppCompatActivity() {
     }
 
     fun startMainActivity(view: View) {
-        val mainActivityIntent = Intent(this, MainActivity::class.java)
-        startActivity(mainActivityIntent)
-
+        finish()
     }
-
-    fun startMainActivityTwo(view: View) {}
 }
